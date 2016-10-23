@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="r8x-g4-eMj">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Base Navigation Controller-->
+        <scene sceneID="gQa-nh-j5Z">
+            <objects>
+                <navigationController id="r8x-g4-eMj" customClass="BaseNavigationController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YGD-L3-alH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="v9s-m8-lhp" kind="relationship" relationship="rootViewController" id="xtQ-e5-cWQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EQp-Oj-KBp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-582" y="180"/>
+        </scene>
+        <!--消息-->
+        <scene sceneID="xID-fJ-bZA">
+            <objects>
+                <viewController id="v9s-m8-lhp" customClass="MessageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="093-2U-aBl"/>
+                        <viewControllerLayoutGuide type="bottom" id="bQA-0j-J1j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rJL-wb-Lwx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLC-JZ-fcq">
+                                <rect key="frame" x="110" y="146" width="30" height="30"/>
+                                <connections>
+                                    <action selector="catAction:" destination="v9s-m8-lhp" eventType="touchUpInside" id="0xo-yO-3cT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Llf-gi-cYV">
+                                <rect key="frame" x="247" y="146" width="68" height="30"/>
+                                <connections>
+                                    <action selector="bluemoonAction:" destination="v9s-m8-lhp" eventType="touchUpInside" id="ENr-SK-YXD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="消息" id="RFF-9E-cHH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yr9-9d-Zhs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121" y="160"/>
+        </scene>
+    </scenes>
+</document>
